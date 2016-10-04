@@ -10,9 +10,11 @@ num_spell_eng - Spell a number in English (Golang)
 
 Import package num_spell_eng
 
-```import github.com/taras-tk/num_spell_eng```
+```import "github.com/taras-tk/num_spell_eng"```
 
-Convert number
+Spell a number
+
 ```go
-    str := num_spell_eng.NumberSpell(23) // outputs "twenty-three"
+    str := num_spell_eng.NumberSpell(1024)  // outputs "one thousand, twenty-four"
+    str = num_spell_eng.NumberSpell(23)     // outputs "twenty-three"
 ```
